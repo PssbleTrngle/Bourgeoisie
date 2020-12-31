@@ -1,0 +1,29 @@
+plugins {
+    id "architect-plugin" version "1.2.33"
+    id "forgified-fabric-loom" version "0.5.14" apply false
+}
+
+architect {
+    minecraft = rootProject.minecraft_version
+}
+
+subprojects {
+    apply plugin: "forgified-fabric-loom"
+
+    loom {
+        silentMojangMappingsLicense()
+    }
+}
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "architect-plugin"
+
+    archivesBaseName = rootProject.archives_base_name
+    version = rootProject.mod_version
+    group = rootProject.maven_group
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
