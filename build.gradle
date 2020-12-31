@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
+    }
+}
+
 plugins {
     id "architect-plugin" version "1.2.33"
     id "forgified-fabric-loom" version "0.5.14" apply false
