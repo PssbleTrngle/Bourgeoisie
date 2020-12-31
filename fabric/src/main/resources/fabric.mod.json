@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "bourgeoisie",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Bourgeoisie",
+  "description": "Seize the mines of production",
   "authors": [
-    "Me!"
+    "possible_triangle"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/PssbleTrngle/Bourgeoisie",
+    "issues": "https://github.com/PssbleTrngle/Bourgeoisie/issues"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "https://github.com/PssbleTrngle/Bourgeoisie/LICENSE.md",
+  "icon": "assets/bourgeoisie/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "com.possible_triangle.fabric.BourgeoisieFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json"
+    "bourgeoisie.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.7.4",

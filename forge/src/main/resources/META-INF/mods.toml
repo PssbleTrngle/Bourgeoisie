@@ -1,33 +1,32 @@
 modLoader = "javafml"
 loaderVersion = "[35,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/PssbleTrngle/Bourgeoisie/issues"
+license = "https://github.com/PssbleTrngle/Bourgeoisie/LICENSE.md"
 
 [[mods]]
-modId = "examplemod"
+modId = "bourgeoisie"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Bourgeoisie"
+authors = "possible_triangle"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Seize the mines of production
 '''
-#logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.bourgeoisie]]
 modId = "forge"
 mandatory = true
 versionRange = "[35,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.bourgeoisie]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.16.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.bourgeoisie]]
 modId = "architectury"
 mandatory = true
 versionRange = "[1.1.55,)"
