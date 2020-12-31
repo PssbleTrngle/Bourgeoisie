@@ -12,16 +12,16 @@ architectury {
 
 apply plugin: 'kotlin'
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
 repositories {
     maven {
         name = 'kotlinforforge'
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
-    }
-}
-
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 }
 
@@ -30,7 +30,9 @@ dependencies {
     mappings(minecraft.officialMojangMappings())
     forge("net.minecraftforge:forge:${rootProject.architect.minecraft}-${rootProject.forge_version}")
     modCompile("me.shedaniel:architectury:${rootProject.architectury_version}:forge")
+
     implementation("thedarkcolour:kotlinforforge:${rootProject.kotlin_forge_version}")
+    runtime("thedarkcolour:kotlinforforge:${rootProject.kotlin_forge_version}")
 
     compileOnly(project(path: ":common")) {
         transitive = false
