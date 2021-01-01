@@ -1,5 +1,5 @@
 modLoader = "kotlinforforge"
-loaderVersion = "[1,)"
+loaderVersion = "[1.7,)"
 issueTrackerURL = "https://github.com/PssbleTrngle/Bourgeoisie/issues"
 license = "https://github.com/PssbleTrngle/Bourgeoisie/LICENSE.md"
 
@@ -32,10 +32,3 @@ mandatory = true
 versionRange = "[1.1.55,)"
 ordering = "AFTER"
 side = "BOTH"
-
-[[dependencies.bourgeoisie]]
-modId="kotlinforforge"
-mandatory=true
-versionRange="[1.7.0,)"
-ordering="NONE"
-side="BOTH"

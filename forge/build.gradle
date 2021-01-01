@@ -31,8 +31,7 @@ dependencies {
     forge("net.minecraftforge:forge:${rootProject.architect.minecraft}-${rootProject.forge_version}")
     modCompile("me.shedaniel:architectury:${rootProject.architectury_version}:forge")
 
-    implementation("thedarkcolour:kotlinforforge:${rootProject.kotlin_forge_version}")
-    runtime("thedarkcolour:kotlinforforge:${rootProject.kotlin_forge_version}")
+    modImplementation("thedarkcolour:kotlinforforge:${rootProject.kotlin_forge_version}")
 
     compileOnly(project(path: ":common")) {
         transitive = false
